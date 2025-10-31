@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChatInterface } from './components/ChatInterface';
-import type { UserLocation } from './components/types';
 
-const App: React.FC = () => {
-  const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
-  const [locationError, setLocationError] = useState<string | null>(null);
+const App = () => {
+  const [userLocation, setUserLocation] = useState(null);
+  const [locationError, setLocationError] = useState(null);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -28,8 +27,13 @@ const App: React.FC = () => {
 
   return (
     <div className="w-screen h-screen bg-gradient-to-br from-gray-900 to-[#111827] text-gray-100 flex flex-col font-['Inter']">
+
+          <h1 className="text-2xl font-bold text-center mt-8">Welcome to CareerMate AI</h1>
+          
       <ChatInterface userLocation={userLocation} locationError={locationError} />
     </div>
+
+
   );
 };
 

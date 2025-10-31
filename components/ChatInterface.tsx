@@ -6,7 +6,7 @@ import { InitialPrompts } from './InitialPrompts';
 import { CareerMateIcon } from './Icons';
 import { Sender, type Message, type UserLocation, type GroundingSource } from './types';
 import type { Chat } from '@google/genai';
-
+import './ChatInterface.css';
 
 interface ChatInterfaceProps {
     userLocation: UserLocation | null;

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Sender, type Message, type GroundingSource } from './types';
 import { UserIcon, CareerMateIcon, MapPinIcon } from './Icons';
+import './MessageList.css';
 
 // A more robust markdown parser for bold, italics and lists
 const SimpleMarkdown: React.FC<{ text: string }> = ({ text }) => {
