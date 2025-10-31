@@ -1,0 +1,7 @@
+{
+  "name": "CareerMate AI",
+  "description": "An AI-powered chatbot to help with interview preparation, resume enhancement, and location-based job search queries using Google Maps.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
